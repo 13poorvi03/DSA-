@@ -22,4 +22,30 @@ APPROACH
 
 // CODE:-
 
+#include<iostream>
+using namespace std;
+int slargest(int arr[], int n){
+    int ans =arr[0];
+    int smax = -1;
+    for(int i=0; i<n; i++){
+        if(ans<arr[i]){
+            smax = ans;
+            ans=arr[i];
+        }
+        else if(smax<arr[i] && arr[i]!=ans && smax!=ans){
+            smax = arr[i];
+        }
+    }
+    
+    return smax;
 
+}
+
+int main(){
+    int arr[] = {4, 2, 7, 8, 1, 2, 5};
+     int n = 7;
+     cout<<slargest(arr,n)<<endl;
+
+
+    return 0;
+}
