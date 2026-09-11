@@ -33,8 +33,8 @@ Other case, return false.
 
 
 
-
 #include<iostream>
+#include<vector>
 using namespace std;
 
 bool isSorted(int arr[], int n){
@@ -47,7 +47,7 @@ bool isSorted(int arr[], int n){
 }
 
 void rotateArray(int arr[], int n, int pos){
-    int rotated[n];
+    vector<int> rotated(n);   // ✅ use vector instead of int rotated[n]
     int k = 0;
 
     // copy elements from pos to end
@@ -91,6 +91,7 @@ int main(){
 
     return 0;
 }
+
 
 
 
