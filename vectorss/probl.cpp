@@ -1,10 +1,11 @@
 #include<iostream>
-#include<vector>
+// #include<vector>
 using namespace std;
-int single()
-int main(){
-    
 
+int main()
+{
+    
+ cout<<"hello world"<<endl;
     return 0;
 }
 
