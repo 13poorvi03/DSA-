@@ -50,6 +50,8 @@ for(int val : vec){
     cout<<val<<endl;
 }
 
+
+
 vec.pop_back();
 cout<<"after pop back size = "<<vec.size()<<endl;
 for(int val : vec){
