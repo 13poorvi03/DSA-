@@ -65,6 +65,16 @@ cout<<endl;
 
 cout<<vec.back()<<endl;
 
+cout<<vec.size()<<endl;
+cout<<vec.capacity()<<endl;
+cout<<endl;
+
+vec.push_back(6);
+vec.push_back(7);
+vec.push_back(8);
+vec.push_back(9);
+cout<<vec.size()<<endl;
+cout<<vec.capacity()<<endl;
     return 0;
 
 }
